@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACARS Mensaje Año Nuevo 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', monospace;
+        }
+        
+        body {
+            background-color: #0a2a5a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .acars-container {
+            background-color: #1a3a6a;
+            border: 3px solid #4a6baa;
+            border-radius: 5px;
+            width: 600px;
+            padding: 15px;
+            box-shadow: 0 0 20px rgba(0, 50, 150, 0.5);
+        }
+        
+        .header {
+            color: #ffff00;
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #4a6baa;
+            font-weight: bold;
+        }
+        
+        .message-section {
+            background-color: #0a1a3a;
+            border: 1px solid #2a4a8a;
+            padding: 10px;
+            margin-bottom: 15px;
+            color: #00ff00;
+            font-size: 13px;
+            line-height: 1.3;
+        }
+        
+        .acars-label {
+            color: #00ffff;
+            font-weight: bold;
+            font-size: 12px;
+            margin-bottom: 3px;
+        }
+        
+        .message-text {
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            background-color: #001122;
+            padding: 8px;
+            border: 1px solid #2a4a8a;
+            margin-top: 5px;
+            min-height: 60px;
+            white-space: pre;
+            letter-spacing: 0.5px;
+        }
+        
+        .message-text .highlight {
+            color: #ffff00;
+            font-weight: bold;
+        }
+        
+        .message-text .special {
+            color: #00ffff;
+            font-style: italic;
+        }
+        
+        .controls-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .control-button {
+            background-color: #2a4a8a;
+            color: #ffffff;
+            border: 1px solid #4a6baa;
+            padding: 5px 8px;
+            font-size: 11px;
+            text-align: center;
+            cursor: default;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        .control-button.active {
+            background-color: #3a5a9a;
+            border-color: #5a7bba;
+        }
+        
+        .keyboard-section {
+            background-color: #0a1a3a;
+            border: 1px solid #2a4a8a;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .keyboard-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+        
+        .key {
+            background-color: #2a4a8a;
+            color: #ffffff;
+            border: 1px solid #4a6baa;
+            width: 40px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 3px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        
+        .key-wide {
+            width: 60px;
+        }
+        
+        .key-numpad {
+            background-color: #1a3a6a;
+            color: #ffff00;
+            font-size: 16px;
+        }
+        
+        .key-special {
+            background-color: #3a5a9a;
+            color: #00ffff;
+        }
+        
+        .numpad-row {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        
+        .footer {
+            color: #a0a0ff;
+            font-size: 10px;
+            text-align: center;
+            margin-top: 10px;
+            padding-top: 5px;
+            border-top: 1px solid #4a6baa;
+        }
+        
+        .return-button {
+            background-color: #ffaa00;
+            color: #000000;
+            border: 1px solid #ffcc00;
+            padding: 3px 10px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 5px;
+            border-radius: 3px;
+        }
+        
+        .timestamp {
+            color: #a0a0a0;
+            font-size: 10px;
+            text-align: right;
+            margin-top: 5px;
+        }
+        
+        .message-box {
+            position: relative;
+            padding: 10px;
+            border-left: 3px solid #00ff00;
+            background-color: rgba(0, 32, 64, 0.5);
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="acars-container">
+        <div class="header">MAX DIFF PRESS at T/O and LOG=0.2 psi - Honeywell</div>
+        
+        <div class="message-section">
+            <div class="acars-label">ACARS SYSTEM MESSAGE</div>
+            <div class="acars-label">FREE TEXT 1/2</div>
+            <div class="acars-label">TRANSMISSION: GLOBAL BROADCAST</div>
+            
+            <div class="message-box">
+                <div class="message-text">
+<span class="highlight">*** FELIZ AÑO 2026 ***</span>
+
+<span class="special">EN ESTE NUEVO AÑO, LES DESEO:</span>
+
+SALUD, FELICIDAD Y PROSPERIDAD
+
+ÉXITO EN TODOS SUS PROYECTOS
+
+PAZ Y BIENESTAR PARA SUS FAMILIAS
+
+<span class="special">QUE EL 2026 TRAIGA BENDICIONES</span>
+<span class="special">Y NUEVAS OPORTUNIDADES</span>
+
+<span class="highlight">PARA TODOS MIS CONTACTOS</span>
+
+"ATTE., LIC. RICHARD SUAREZ."
+                </div>
+            </div>
+            
+            <div class="timestamp">TRANSMITTED: 31/DEC/2025 23:59Z</div>
+            <div class="timestamp">MESSAGE ID: ACARS-2026-NY-001</div>
+            
+            <div class="return-button">&lt;RETURN TO MENU</div>
+        </div>
+        
+        <div class="controls-section">
+            <div class="control-button active">READY</div>
+            <div class="control-button">PRINT*</div>
+            <div class="control-button">DATALINK</div>
+            <div class="control-button">REPORT*</div>
+            <div class="control-button">PERF</div>
+            <div class="control-button">NAV</div>
+            <div class="control-button">PREV</div>
+            <div class="control-button">PROG</div>
+            <div class="control-button">RTE</div>
+            <div class="control-button">CB</div>
+            <div class="control-button">BRI</div>
+            <div class="control-button">MENU</div>
+            <div class="control-button">DK</div>
+            <div class="control-button">MKT</div>
+            <div class="control-button">TRS</div>
+            <div class="control-button">K</div>
+            <div class="control-button">O</div>
+            <div class="control-button">DIM</div>
+        </div>
+        
+        <div class="keyboard-section">
+            <div class="keyboard-row">
+                <div class="key">A</div>
+                <div class="key">B</div>
+                <div class="key">C</div>
+                <div class="key">D</div>
+                <div class="key">E</div>
+                <div class="key">F</div>
+            </div>
+            
+            <div class="keyboard-row">
+                <div class="key">G</div>
+                <div class="key">H</div>
+                <div class="key">I</div>
+                <div class="key">J</div>
+                <div class="key">K</div>
+                <div class="key">L</div>
+                <div class="key key-numpad">(1)</div>
+                <div class="key key-numpad">2</div>
+                <div class="key key-numpad">3</div>
+                <div class="key key-special">+</div>
+            </div>
+            
+            <div class="keyboard-row">
+                <div class="key">M</div>
+                <div class="key">N</div>
+                <div class="key">O</div>
+                <div class="key">P</div>
+                <div class="key">Q</div>
+                <div class="key">R</div>
+                <div class="key key-numpad">4</div>
+                <div class="key key-numpad">5</div>
+                <div class="key key-numpad">6</div>
+                <div class="key key-special">+</div>
+            </div>
+            
+            <div class="keyboard-row">
+                <div class="key">S</div>
+                <div class="key">T</div>
+                <div class="key">U</div>
+                <div class="key">V</div>
+                <div class="key">W</div>
+                <div class="key key-numpad">7</div>
+                <div class="key key-numpad">8</div>
+                <div class="key key-numpad">9</div>
+            </div>
+        </div>
+        
+        <div class="footer">Honeywell ACARS Display Unit - New Year Broadcast 2026</div>
+    </div>
+</body>
+</html>
